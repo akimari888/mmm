@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(243, 14, 14);
+}
+
+article {
+    width: 1000px;
+    margin: 40px auto;
+    padding:  20px 150px 60px ;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 16px black(0,0,0,0.7);
+}
+
+#main {
+    border:  2px solid rgb(0, 0, 0);
+}
+
+h1,h2,h3 {
+    font-family: 'Centurt Gothic' , monospace;
+}
+ 
+#logo {
+    float: left;
+
+}
+
+#slogans {
+    float: right;
+    font-size: .7rem;
+    text-align: right;
+    color: aqua;
+    width: 30%;
+}
+
+.clearfix::before, .clearfix::after {
+    content: ""; 
+    display: table;
+}
+
+.clearfix::after
+{
+    clear: both;
+}
+
+.aligin-right {
+    float: right;
+    margin-right: 15px;
+}
+
+.block {
+    padding:  30px;
+}
+
+#main img {
+    height:  100px ;
+}
+
+.block:nth-child(odd) {
+    background-color: aliceblue;
+    border-bottom:  2px solid darkgray;
+    border-top:  2px solid darkgrey;
+}
+
+#main {
+    border-left: 2px solid darkgrey;
+    border-right:  2px solid darkgrey;
+}
+
+.clearfix::before, .clearfix::after,
+.block::before, .block::after {
+    comtent: "";
+    display:table;
+}
+.clearfix::after, .block::after {
+    clear:both;
+}
